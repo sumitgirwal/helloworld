@@ -1,13 +1,14 @@
 {
-    "builds": [{
-        "src": "hellworld/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    }],
+    "builds": [
+      {
+        "src": "helloworld/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "hellworld/wsgi.py"
-        }
+      {
+        "src": "/(.*)",
+        "dest": "helloworld/wsgi.py"
+      }
     ]
-}
+  }
